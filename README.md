@@ -3,7 +3,7 @@
 
 Este repositório contém a arquitetura completa de banco de dados para um e-commerce fictício de cafés especiais. O ecossistema abrange desde o levantamento de requisitos e modelagem conceitual até a criação de scripts DDL, carga de dados (DML) e consultas analíticas de auditoria (DQL).
 
-> 🌐 **Acesse o site do projeto:** [Clique aqui para visualizar o E-Commerce](https://gemini.google.com/share/2f7cd1c25622)
+> 🌐 **Acesse o site utilizado na abstração do projeto:** [Clique aqui para visualizar o E-Commerce](https://gemini.google.com/share/2f7cd1c25622)
 
 ---
 
@@ -21,6 +21,10 @@ O desenho abaixo representa o ecossistema e as entidades do negócio, mapeando o
 
 ![Modelagem Conceitual](./img/conceitual_desafiocafe.png)
 
+### Lógica
+Com a modelagem lógica é possível visualizar como as relações definidas na modelagem conceitual se traduzem nas chaves estrangeiras (FK) dentro das tabelas.
+![Modelagem Lógica](./img/logico_ecomm_cafe.png)
+
 ### Regras de Negócio Implementadas
 * **Relacionamento 1:1 Restrito:** Aplicado entre o Café e sua Descrição Técnica, garantindo isolamento de dados pesados de texto.
 * **Assinatura VIP:** Relação exclusiva de 1:1 entre Usuários e o Clube de Assinatura.
@@ -29,7 +33,7 @@ O desenho abaixo representa o ecossistema e as entidades do negócio, mapeando o
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas (Stack)
+## 🛠️ Tecnologias utilizadas
 * **SGBD:** MySQL (Versão 8.0+)
 * **Modelagem:** brModelo (Conceitual e Lógico)
 * **Documentação:** Microsoft Excel (Dicionário de Dados padronizado)
@@ -40,14 +44,19 @@ O desenho abaixo representa o ecossistema e as entidades do negócio, mapeando o
 ## 🗂️ Estrutura do Repositório
 
 ```text
-├── modelagem/
-│   ├── conceitual_desafiocafe.brM3           # Arquivo editável do brModelo
-│   ├── Logico_desafiocafe.brM3               # Arquivo editável do brModelo
-│   └── dicionario_dados_ecommerce_cafe.xlsx  # Dicionário de dados completo
-├── scripts_sql/
-│   ├── ddl_cafe.sql                          # Criação de tabelas e constraints
-│   ├── dml_cafe.sql                          # Carga de dados de teste (Inserts)
-│   └── dql_cafe.sql                          # Queries analíticas e exercícios
+├───img
+│       conceitual_ecomm_cafe.png
+│       logico_ecomm_cafe.png
+│
+├───modelagem
+│       conceitual_desafiocafe.brM3
+│       dicionario_dados_ecommerce_cafe.xlsx
+│       Lógico_desafiocafe.brM3
+│
+├───scripts_sql
+│        ddl_cafe.sql
+│        dml_cafe.sql
+│        dql_cafe.sql
 └── README.md
 ```
 
@@ -62,7 +71,7 @@ Os scripts de consulta (`dql_cafe.sql`) simulam situações reais de um e-commer
 
 ---
 
-## 🚀 Próximos Passos & Roadmap de Evolução
+## 🚀 TODO
 O projeto foi estruturado pensando em escalabilidade. As próximas fases de desenvolvimento incluem a inteligência e automação do e-commerce:
 
 - [ ] **Integração de um Chatbot de Atendimento:** Implementação de um assistente virtual inteligente integrado aos canais de comunicação do e-commerce.
