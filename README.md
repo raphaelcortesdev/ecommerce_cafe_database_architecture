@@ -19,7 +19,7 @@ A proposta consistiu em projetar o banco de dados para dar suporte a um e-commer
 ### Conceitual
 O desenho abaixo representa o ecossistema e as entidades do negócio, mapeando o fluxo desde o cadastro de usuários (clientes/admins) até o fechamento de pedidos e assinaturas de clubes.
 
-![Modelagem Conceitual](./img/conceitual_desafiocafe.png)
+![Modelagem Conceitual](./img/conceitual_ecomm_cafe.png)
 
 ### Lógica
 Com a modelagem lógica é possível visualizar como as relações definidas na modelagem conceitual se traduzem nas chaves estrangeiras (FK) dentro das tabelas.
