@@ -1,0 +1,11 @@
+# --- ADICIONAR NA FASE DO CHATBOT ---
+
+# Arquivos de variáveis de ambiente (onde vai ficar a sua chave de API da LLM)
+.env
+.env.local
+
+# Pastas de dependências de código (Python ou Node.js)
+node_modules/
+__pycache__/
+venv/
+.venv/
